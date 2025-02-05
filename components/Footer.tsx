@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Facebook, Twitter, Instagram, Youtube } from "lucide-react"
+import BrandName from "./BrandName"
 
 const Footer = () => {
   return (
@@ -7,8 +8,10 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4">DroneX</h3>
-            <p className="mb-4">Revolutionizing aerial technology</p>
+            <h3 className="text-2xl font-bold mb-4">
+                <BrandName size="2xl" />
+            </h3>
+            <p className="mb-4">Lighter than a bird, tougher than an industrial drone</p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white">
                 <Facebook className="h-6 w-6" />

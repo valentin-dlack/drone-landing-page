@@ -8,47 +8,43 @@ const teamMembers = [
   {
     name: "Azad Rojoa",
     role: "CEO & Founder",
-    image: "/team-member-1.jpg",
-    bio: "Robotics engineer with a passion for drones and eco-friendly technology.",
+    image: "/staff/team_1.jpg",
+    bio: "Robotics & mecatroical student",
     social: {
-      twitter: "https://twitter.com/janedoe",
       linkedin: "https://linkedin.com/in/janedoe",
       github: "https://github.com/janedoe",
     },
   },
   {
-    name: "John Smith",
+    name: "Léo Thévenet",
     role: "CTO",
-    image: "/team-member-2.jpg",
-    bio: "AI expert specializing in autonomous flight systems.",
+    image: "/staff/team_2.jpg",
+    bio: "Mecatronical student",
     social: {
-      twitter: "*",
       linkedin: "*",
       github: "*",
     },
   },
-    {
-        name: "Jane Doe",
-        role: "Lead Engineer",
-        image: "/team-member-3.jpg",
-        bio: "Mechanical engineer with a focus on drone propulsion systems.",
-        social: {
-        twitter: "*",
+  {
+    name: "Léa Yrieix",
+    role: "Lead Engineer",
+    image: "/staff/team_3.jpg",
+    bio: "Mechanical student with a focus on drone propulsion systems.",
+    social: {
+      linkedin: "*",
+      github: "*",
+    },
+  },
+  {
+      name: "Alex Le Bourch",
+      role: "Lead Engineer",
+      image: "/staff/team_4.jpg",
+      bio: "Robotics student with a focus on general drone systems.",
+      social: {
         linkedin: "*",
         github: "*",
-        },
-    },
-    {
-        name: "Jane Doe",
-        role: "Lead Engineer",
-        image: "/team-member-3.jpg",
-        bio: "Mechanical engineer with a focus on drone propulsion systems.",
-        social: {
-        twitter: "*",
-        linkedin: "*",
-        github: "*",
-        },
-    },
+      },
+  },
 
 
 ]

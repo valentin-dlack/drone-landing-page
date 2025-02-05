@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Zap, Battery, Hammer } from "lucide-react"
+import { Zap, Hammer, BatteryFull } from "lucide-react"
 
 const features = [
   {
@@ -12,7 +12,7 @@ const features = [
     comparison: "more efficient than leading competitors",
   },
   {
-    icon: <Battery className="h-8 w-8 text-green-500" />,
+    icon: <BatteryFull className="h-8 w-8 text-green-500" />,
     title: "Extended Battery Life",
     description: "Long-lasting power for extended flight times.",
     metric: "XX hours",
@@ -38,13 +38,13 @@ const FeaturesSection = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
+              transition={{ duration: 0.5 }}
+              whileHover={{ scale: 1.05, speed: 2 }}
               className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               <motion.div
-              className="flex items-center justify-center mb-4"
-              animate={{ y: [0, 5, 0] }}
-              transition={{ repeat: Number.POSITIVE_INFINITY, duration: 3 }}>
+                className="flex items-center justify-center mb-4"
+              >
                 {feature.icon}
               </motion.div>
               <h3 className="text-xl font-bold mb-2 text-center">{feature.title}</h3>
@@ -66,8 +66,9 @@ const FeaturesSection = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
+
 
 export default FeaturesSection
 

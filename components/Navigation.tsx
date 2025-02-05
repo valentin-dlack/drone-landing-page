@@ -4,12 +4,16 @@ import { useState, useEffect } from "react"
 import { useTheme } from "next-themes"
 import { Moon, Sun } from "lucide-react"
 import { motion } from "framer-motion"
+import BrandName from "./BrandName"
+import { useSmoothScroll } from "@/hooks/useSmoothScroll"
 
 const Navigation = () => {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
   useEffect(() => setMounted(true), [])
+
+  useSmoothScroll()
 
   if (!mounted) return null
 
@@ -18,7 +22,9 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <span className="font-bold text-2xl text-blue-600 dark:text-blue-400">DroneX</span>
+            <span className="font-bold text-2xl">
+                <BrandName size="2xl" />
+            </span>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
