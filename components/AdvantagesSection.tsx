@@ -31,7 +31,7 @@ const AdvantagesSection = () => {
               </div>
               <div className={`md:w-1/2 ${index % 2 === 0 ? "md:order-2" : "md:order-1"}`}>
                 <Image
-                  src={`/advantage-${index + 1}.jpg`}
+                  src={`/advantage-3.jpg`}
                   alt={advantage.title}
                   width={500}
                   height={300}

@@ -78,7 +78,7 @@ const TeamSection = () => {
               <p className="text-gray-600 dark:text-gray-300 mb-4">{member.bio}</p>
               <div className="flex justify-center space-x-4">
                 <a
-                  href={member.social.twitter}
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-blue-500"
