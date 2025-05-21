@@ -25,9 +25,9 @@ const specs = {
 }
 
 /*const comparisonData = [
-  { feature: "Max Speed", droneX: "100 mph", competitor1: "80 mph", competitor2: "70 mph" },
-  { feature: "Flight Time", droneX: "4 hours", competitor1: "2.5 hours", competitor2: "2 hours" },
-  { feature: "Camera", droneX: "4K 120 FPS", competitor1: "4K 60 FPS", competitor2: "1080p 60 FPS" },
+  { feature: "Max Speed", FeatherTech F1: "100 mph", competitor1: "80 mph", competitor2: "70 mph" },
+  { feature: "Flight Time", FeatherTech F1: "4 hours", competitor1: "2.5 hours", competitor2: "2 hours" },
+  { feature: "Camera", FeatherTech F1: "4K 120 FPS", competitor1: "4K 60 FPS", competitor2: "1080p 60 FPS" },
 ]*/
 
 const SpecsSection = () => {
@@ -60,7 +60,7 @@ const SpecsSection = () => {
             <TableHeader>
               <TableRow>
                 <TableHead>Feature</TableHead>
-                <TableHead>DroneX</TableHead>
+                <TableHead>FeatherTech F1</TableHead>
                 <TableHead>Competitor 1</TableHead>
                 <TableHead>Competitor 2</TableHead>
               </TableRow>
@@ -69,7 +69,7 @@ const SpecsSection = () => {
               {comparisonData.map((row, index) => (
                 <TableRow key={index}>
                   <TableCell>{row.feature}</TableCell>
-                  <TableCell>{row.droneX}</TableCell>
+                  <TableCell>{row.FeatherTech F1}</TableCell>
                   <TableCell>{row.competitor1}</TableCell>
                   <TableCell>{row.competitor2}</TableCell>
                 </TableRow>

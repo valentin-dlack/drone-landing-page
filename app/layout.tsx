@@ -9,8 +9,8 @@ import type React from "react" // Import React
 const fonts = [GeistSans]
 
 export const metadata = {
-  title: "DroneX - Next Generation Drone Technology",
-  description: "Experience the future of aerial technology with DroneX",
+  title: "FeatherTech - Next Generation Drone Technology",
+  description: "Experience the future of aerial technology with FeatherTech",
 }
 
 export default function RootLayout({

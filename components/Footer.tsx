@@ -49,7 +49,7 @@ const Footer = () => {
             <p>123 Drone Street</p>
             <p>Tech City, TC 12345</p>
             <p>Phone: (123) 456-7890</p>
-            <p>Email: info@dronex.com</p>
+            <p>Email: info@FeatherTech.com</p>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">
