@@ -2,7 +2,6 @@
 
 import SpotlightCard from "@/app/blocks/Components/SpotlightCard/SpotlightCard";
 import { colornameToRgba } from "@/lib/utils";
-import { motion } from "framer-motion"
 import { Zap, Hammer, BatteryFull } from "lucide-react"
 
 const features = [

@@ -31,7 +31,7 @@ const specs = {
 ]*/
 
 const SpecsSection = () => {
-  const [activeTab, setActiveTab] = useState("dimensions")
+  const [, setActiveTab] = useState("dimensions")
 
   return (
     <section id="specs" className="py-20 bg-white dark:bg-gray-900">
