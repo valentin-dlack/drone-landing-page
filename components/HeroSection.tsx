@@ -1,12 +1,21 @@
 "use client"
 
 import { motion } from "framer-motion"
-import Image from "next/image"
+// import Image from "next/image" // Remove unused import
+import Particles from "../app/blocks/Backgrounds/Particles/Particles"
+import DroneModel from "./DroneModel" // Import the new component
 
 const HeroSection = () => {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-100 to-cyan-400 z-0" />
+    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-tl from-blue-500 to-white">
+      <div className="absolute inset-0 z-0">
+        <Particles
+        particleColors={["#ADD8E6", "#E6E6FA", "#FFC0CB", "#FFFACD", "#FFDAB9"]}
+        particleCount={500}
+        particleSpread={10}
+        speed={0.1}
+        />
+      </div>
       <div className="relative z-10 text-[#2d3e50] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2">
           <motion.h1
@@ -38,19 +47,14 @@ const HeroSection = () => {
             See More
           </motion.a>
         </div>
-        <div className="md:w-1/2 mt-12 md:mt-0">
+        <div className="md:w-1/2 mt-12 md:mt-0 h-[400px] w-full md:h-auto">
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
+            className="w-full h-full"
           >
-            <Image
-              src="/drone_hero.png"
-              alt="3D rendered drone"
-              width={600}
-              height={400}
-              className="w-full h-auto"
-            />
+            <DroneModel modelPath="/drone.fbx"/>
           </motion.div>
         </div>
       </div>
